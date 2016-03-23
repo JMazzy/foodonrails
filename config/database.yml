@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: danebook_dev
+  database: food_truck_dev
 
 test:
   <<: *default
-  database: danebook_test
+  database: food_truck_test
 
 production:
   <<: *default
-  database: danebook
+  database: food_truck

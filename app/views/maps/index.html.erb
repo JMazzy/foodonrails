@@ -7,16 +7,12 @@
   var lat = <%= @user.latitude || 0 %>;
   var lng = <%= @user.longitude || 0 %>;
 
-  console.log(lat,lng)
-
   handler = Gmaps.build('Google');
+
+  markerArray = JSON.parse(<%= @trucks %>);
+
   handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){
-    markers = handler.addMarkers([
-      {
-        "lat": lat,
-        "lng": lng,
-      }
-    ]);
+    markers = handler.addMarkers( markerArray );
 
     handler.bounds.extendWith(markers);
     handler.fitMapToBounds();

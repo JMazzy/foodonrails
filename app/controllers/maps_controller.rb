@@ -6,6 +6,10 @@ class MapsController < ApplicationController
     else
       redirect_to new_user_path
     end
-    
+
+    @trucks = JSON.generate(FoodTruck.all.map do |truck|
+      { title: truck.name, lat: truck.latitude, lng: truck.longitude }
+    end).to_json.html_safe
+
   end
 end
