@@ -4,10 +4,13 @@
 
 
 <script type="text/javascript">
-  var lat = <%= @user.latitude || 0 %>;
-  var lng = <%= @user.longitude || 0 %>;
+  var lat = <%= @user.latitude %>;
+  var lng = <%= @user.longitude %>;
+  var name = "<%= @user.username %>"
 
   handler = Gmaps.build('Google');
+
+  user_location = { title: name, lat: lat, lng: lng }
 
   markerArray = JSON.parse(<%= @trucks %>);
 

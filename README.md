@@ -11,3 +11,4 @@ Ruby on Rails (backend)
 Google MDL (frontend)
 Google Maps API
 Street Food App API
+Geokit
