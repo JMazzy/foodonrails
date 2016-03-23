@@ -1,0 +1,24 @@
+<%= form_tag session_path do %>
+  <div class="mdl-textfield mdl-js-textfield">
+    <%= label_tag "Email", nil, class: "mdl-textfield__label" %>
+    <%= text_field_tag :email, nil, class: "mdl-textfield__input" %>
+  </div>
+
+  <br>
+
+  <div class="mdl-textfield mdl-js-textfield">
+    <%= label_tag "Password", nil, class: "mdl-textfield__label" %>
+    <%= password_field_tag :password, nil, class: "mdl-textfield__input" %>
+  </div>
+
+  <br>
+
+  <div class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
+    <%= label_tag "Remember Me", nil, class: "mdl-checkbox__label" %>
+    <%= check_box_tag :remember_me, nil, class: "mdl-checkbox__input" %>
+  </div>
+
+  <br>
+
+  <%= submit_tag "Log in", class: "mdl-button mdl-js-button mdl-button--raised mdl-button--colored" %>
+<% end %>
