@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/geokit/geokit-rails.git
+  revision: 45ae9852591d0682efec753bcdeaf09a3946c524
+  specs:
+    geokit-rails (2.1.0)
+      geokit (~> 1.5)
+      rails (>= 3.0)
+
+GIT
   remote: git://github.com/nixme/jazz_hands.git
   revision: 5e4b48f145883ecb14b55bf04eacc28ac9662676
   branch: bring-your-own-debugger
@@ -88,9 +96,6 @@ GEM
     figaro (1.1.1)
       thor (~> 0.14)
     geokit (1.10.0)
-    geokit-rails (2.1.0)
-      geokit (~> 1.5)
-      rails (>= 3.0)
     globalid (0.3.6)
       activesupport (>= 4.1.0)
     gmaps4rails (2.1.2)
@@ -226,7 +231,7 @@ DEPENDENCIES
   binding_of_caller
   coffee-rails
   figaro (= 1.1.1)
-  geokit-rails
+  geokit-rails!
   gmaps4rails (= 2.1.2)
   httparty (= 0.13.7)
   jazz_hands (= 0.5.2)!

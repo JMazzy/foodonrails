@@ -14,7 +14,7 @@ gem 'figaro', '1.1.1'
 gem 'gmaps4rails', '2.1.2'
 gem 'httparty', '0.13.7'
 gem 'underscore-rails'
-gem 'geokit-rails'
+gem 'geokit-rails', github: 'geokit/geokit-rails'
 
 group :development, :test do
   gem 'pry-byebug'
